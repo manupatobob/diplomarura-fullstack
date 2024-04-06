@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left; 
+        }
+        .profile-img {
+            width: 400px; 
+            height: 400px; 
+            object-fit: cover; 
+            border-radius: 25%; 
+            display: block; 
+            margin: 0 auto 20px; 
+        }
+        .toggle-checkbox:checked ~ form {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="img/imagen curri.jpeg" alt="Mi Foto" class="profile-img">
+        </div>
+        <h1>Manuel Gimenez</h1>
+        <h2>Cuantos años tengo?</h2>
+        <ul>
+            <li>Mi edad es de 19 años</li>
+            <li>fecha de nacimiento: el 07/09/2004</li>
+        </ul>
+        <h2>Domicilio</h2>
+        <ul>
+            <li>Ciudad de Mar del Plata</li>
+            <li>Rejon 7600</li>
+        </ul>
+        <h2>Que series me gustan?</h2>
+        <ul>
+            <li>The walking dead</li>
+            <li>Arrow</li>
+            <li>Doctor house</li>
+            <li>rick anda morty</li>
+        </ul>
+        <h2>Pelis que mas me gustaron</h2>
+        <ul>
+            <li>John Wick</li>
+            <li>The Dark Knight</li>
+            <li>Black Panthe</li>
+            <li>Mission: Impossible - Fallout</li>
+            <li>The Fast and the Furious</li>
+        </ul>
+        <h2>Perfil</h2>
+        <ul>
+            <li>Me gusta leer libros relacionado con la vida 
+                financiera como por ejemplo "padre rico y padre pobre."</li>
+            <li>Me gusta entrenar en el gimnacio para poder lograr el 
+                mayor potencial de mi cuerpo y sertirme bien con mi aspecto fisico.</li>
+            <li>Me gusta salir con mi novia a merendar, caminar por la playa y tomar unos mates.</li>
+        </ul>
+        <input type="checkbox" class="toggle-checkbox" id="show-form">
+        <label for="show-form" class="contact-btn">Contacto</label>
+         <form id="formulario" action="#" method="POST">
+            <h2>Contáctame</h2>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+
